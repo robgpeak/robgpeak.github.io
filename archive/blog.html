@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>About - Peak Gaming Group</title>
+<script type='text/javascript' src='js/jquery-1.6.2.min.js'></script>
+<script type='text/javascript' src='js/scrollTo-min.js'></script>
+<script type='text/javascript' src='js/init.js'></script>
+<script>
+$(function(){
+	var winh = $(window).height();
+	var winw = $(window).width();
+	$("body, #aboutleftimage, #rightcolumn").css({"height":(($(window).height()))+"px"});
+	$("#spacerflex").css({"height":(($(window).height())/4)+"px"});			
+	
+	$(window).resize(function(){
+	$("body, #aboutleftimage, #rightcolumn").css({"height":(($(window).height()))+"px"});
+	$("#spacerflex").css({"height":(($(window).height())/4)+"px"});		
+	});
+});
+</script>
+<script type="text/javascript">
+function yes1(c)
+{
+
+$("#div"+c+"").slideToggle("slow");
+if(document.getElementById("anchor"+c+"").innerHTML=='Collapse')
+{
+document.getElementById("anchor"+c+"").innerHTML='See Past Events';
+}
+else
+{
+document.getElementById("anchor"+c+"").innerHTML='Collapse';
+}
+}
+</script>
+<script type="text/javascript">
+$(document).ready(function () {
+$("#news").hide();
+});
+ </script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script>
+  window.intercomSettings = {
+    app_id: "d8m2yyar"
+  };
+</script>
+<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/d8m2yyar';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
+</head>
+
+<body>
+<div id="top"></div>
+<div id="aboutleftimage">
+  <div id="servicesidenav">
+	<br><br><br>
+    <ul>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#abouthistory', 1000);">History</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutmethodology', 1000);">Methodology</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutteam', 1000);">Executive Team</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutconferences', 1000);">Conferences</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutarticles', 1000);">Articles</a></li>
+    </ul>
+  </div>
+</div>
+<div id="rightcolumn" class="aboutimg">
+ <div class="menu_logo">
+    <div class="logo"><img src="images/peak_marketing_logo.png" width="171" height="55" alt="logo" /></div>
+    <div id="nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="blog.html" class="selected">BLOG</a></li>
+        <li><a href="contact.html">CONNECT</a></li>
+      </ul>
+    </div>
+    <div id="servicesidenav" class="desktopmenu">
+	 <ul>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#abouthistory', 1000);">History</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutmethodology', 1000);">Methodology</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutteam', 1000);">Executive Team</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutconferences', 1000);">Conferences</a></li>
+      <li><a href="#" onclick="$('#rightcolumn').scrollTo( '#aboutarticles', 1000);">Articles</a></li>
+    </ul>
+  </div>
+  </div>
+  <div id="clear"></div>
+  <div id="content">
+    <div id="serviceoverview">
+      <!--<div id="spacerflex"></div>-->
+      <p><br><br><br></p>
+      <p><center><iframe src="http://peakgaminggroup.blogspot.com/?m=1" width="100%" height="700" scrolling="yes"></iframe></center></p>
+      <div id="clear"></div>
+      <img src="images/hr_spade.png" width="409" height="22" />
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/cfwpJ_qJ4pc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <p></p>
+      <div id="spacerflex"></div>
+    </div>
+  </div>
+</div>
+<div id="bottom"><p>© Peak Gaming Group - All Rights Reserved - P: 1.631.682-5107 - E: info@PeakGamingGroup.com</p></div>
+</body>
+</html>

@@ -1,0 +1,482 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background-image: url(images/bg.jpg);
+	background-color:#1a1a1a;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#ccc;
+	line-height:20px;
+}
+a {
+	color:#c7ad45;
+}
+a:hover {
+	color:#99811f;
+}
+#homeleftimage {
+	float:left;
+	background-image:url(images/chips.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right center;
+	width:55%;
+	height:800px;
+}
+#servicesleftimage {
+	float:left;
+	background-image:url(images/servicesimg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right center;
+	width:55%;
+	height:800px;
+}
+#aboutleftimage {
+	float:left;
+	background-image:url(images/aboutimg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right center;
+	width:55%;
+	height:800px;
+}
+#connectleftimage {
+	float:left;
+	background-image:url(images/connectimg.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:right center;
+	width:55%;
+	height:800px;
+}
+#rightcolumn {
+	float:left;
+	width:45%;
+	height:auto ;
+	text-align:center;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#nav {
+	background:url(images/navbg.png) no-repeat;
+	width:450px;
+	height:55px;
+	text-align:left;
+	/*border: solid 1px #1a1a1a;*/
+	z-index:5;
+	position:fixed;
+	top:0px;
+}
+#nav ul {
+	list-style-type: none;
+}
+#nav li {
+	display:inline;
+	padding-left:10px;
+	padding-right:10px;
+	border-right: solid 1px #666;
+}
+#nav li a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #a0b0b4;
+	text-decoration:none;
+}
+#nav li a:hover {
+	font-size: 14px;
+	color: #c8ae45;
+}
+.selected {
+	color: #c8ae45 !important;
+}
+#content {
+	width:424px;
+	text-align: justify;
+}
+#clear {
+	clear:both;
+}
+#servicesidenav {
+	position:absolute;
+	top:37%;
+	right:47%;
+	text-align:right;
+}
+#servicesidenav ul {
+	list-style-type: none;
+}
+#servicesidenav li {
+	display: block;
+	padding-left:10px;
+	margin-right:0px;
+	padding-bottom:3px;
+}
+#servicesidenav li a {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration:none;
+	padding-right:20px;
+}
+#servicesidenav li a:hover {
+	font-size: 12px;
+	color: #c8ae45;
+	background: url(images/navarrow.png) no-repeat right;
+}
+#spacerflex {
+	height:150px;
+}
+#bottom {
+	background:url(images/bottombg.png) repeat-x;
+	height:120px;
+	width:100%;
+	position:absolute;
+	bottom:0px;
+}
+#bottom p {
+	font-size:10px;
+	position:absolute;
+	padding-left:60px;
+	bottom:0px;
+	color:#444;
+}
+textarea#styled {
+	background:#333;
+	color:#CCC;
+	border: inset 1px #666;
+}
+.logo {
+	display:none;
+}
+.homeimg, .aboutimg, .serviceimg {
+	background:none;
+}
+.desktopmenu  {
+		display:none;
+	}
+
+#tablenone {
+	display:none;
+}
+/*#top {
+	background:url(images/topbg.png) repeat-x;
+	height:120px;
+	width:100%;
+	position:absolute;
+	top:0px;
+}*/
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+	.desktopmenu  {
+		display:block;
+	}
+	.speceer{
+		margin-top:-94px;
+	}
+	#tabledisplay {
+		display:none;
+	}
+	#tablenone {
+	display:block;
+}
+
+
+.aboutimg {
+ background:url(images/mobile-aboutimg.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.homeimg {
+ background:url(images/mobile-chips.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.serviceimg {
+ background:url(images/mobile-service.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.contactimg {
+ background:url(images/mobile-contact.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+ .menu_logo {
+ background: none repeat scroll 0 0 #000000;
+ height: 115px;
+ position: fixed;
+ width: 100%;
+}
+ img {
+ max-width:100%;
+}
+ .logo {
+ width:100%;
+ text-align:center;
+ margin-top:10px;
+ display:block;
+}
+ #homeleftimage {
+ width:100%;
+ padding:0 4% 0 0;
+ background:none;
+ display:none;
+}
+ #rightcolumn {
+ width:100%;
+}
+ #aboutleftimage, #servicesleftimage, #connectleftimage {
+ background:none;
+ width:100%;
+ display:none;
+}
+ #nav {
+ width:100%;
+ position:inherit;
+ margin-top: 76px;
+ background-size:100% 100%;
+}
+ #content {
+ width:95%;
+ padding:40px 2% 0 2%;
+}
+ #nav ul {
+ margin:10px 0 0 0;
+ padding:0px;
+}
+ #bottom p {
+ bottom:none !important;
+ position:inherit;
+}
+ #spacerflex {
+ height:180px !important;
+}
+ #servicesidenav {
+ background: none repeat scroll 0 0 #000000;
+ border-bottom: 2px solid #666666;
+ border-top: 2px solid #666666;
+ margin-top: 70px;
+ right: 0;
+ width: 100%;
+ padding-bottom:5px;
+}
+ #servicesidenav ul {
+ margin:0px;
+ padding:0px;
+ padding-top:8px;
+ padding-bottom:5px;
+}
+ #servicesidenav li {
+ border-right: 1px solid #C8AE45;
+ float: left;
+ line-height: 8px;
+ margin: 8px 0 5px;
+ padding:0 5px;
+}
+ #servicesidenav li a {
+ padding-right:0px;
+}
+ #servicesidenav li:last-child {
+ border:none;
+}
+ #servicesidenav li a:hover {
+ background:none;
+}
+ #servicesidenav li a {
+ float:left;
+ background:none;
+}
+ #form1 {
+ width:100%;
+}
+ #form1 table tr {
+ width:0% !important;
+}
+ #form1 input[type="text"], textarea {
+ width:100%;
+}
+ #form1 tr td img {
+ width:100%;
+ text-align:center;
+}
+ #customspecer {
+ height:75px !important;
+}
+#servicespace {
+ height:200px !important;
+}
+
+}
+@media only screen and (min-width: 481px) and (max-width: 640px) {
+	.desktopmenu  {
+		display:block;
+	}
+	#tabledisplay {
+		display:none;
+	}
+	.speceer{
+		margin-top:-94px;
+	}
+	
+	#tablenone {
+	display:block;
+}
+.aboutimg {
+ background:url(images/mobile-aboutimg.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.homeimg {
+ background:url(images/mobile-chips.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.serviceimg {
+ background:url(images/mobile-service.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+.contactimg {
+ background:url(images/mobile-contact.png) no-repeat;
+ background-size:100% 100%;
+ width:100%;
+}
+ .menu_logo {
+ background: none repeat scroll 0 0 #000000;
+ height: 115px;
+ position: fixed;
+ width: 100%;
+}
+ img {
+ max-width:100%;
+}
+ .logo {
+ width:100%;
+ text-align:center;
+ margin-top:10px;
+ display:block;
+}
+ #homeleftimage {
+ width:100%;
+ padding:0 4% 0 0;
+ background:none;
+ display:none;
+}
+ #rightcolumn {
+ width:100%;
+}
+ #aboutleftimage, #servicesleftimage, #connectleftimage {
+ background:none;
+ width:100%;
+ display:none;
+}
+ #nav {
+ width:100%;
+ position:inherit;
+ margin-top: 76px;
+ background-size:100% 100%;
+}
+ #content {
+ width:95%;
+ padding:40px 2% 0 2%;
+}
+ #nav ul {
+ margin:10px 0 0 0;
+ padding:0px;
+}
+ #bottom p {
+ bottom:none !important;
+ position:inherit;
+}
+ #spacerflex {
+ height:180px !important;
+}
+ #servicesidenav {
+ background: none repeat scroll 0 0 #000000;
+ border-bottom: 2px solid #666666;
+ border-top: 2px solid #666666;
+ margin-top: 70px;
+ right: 0;
+ width: 100%;
+ padding-bottom:5px;
+}
+ #servicesidenav ul {
+ margin:0px;
+ padding:0px;
+ padding-top:8px;
+ padding-bottom:5px;
+}
+ #servicesidenav li {
+ border-right: 1px solid #C8AE45;
+ float: left;
+ line-height: 8px;
+ margin: 8px 0 5px;
+ padding:0 5px;
+}
+ #servicesidenav li a {
+ padding-right:0px;
+}
+ #servicesidenav li:last-child {
+ border:none;
+}
+ #servicesidenav li a:hover {
+ background:none;
+}
+ #servicesidenav li a {
+ float:left;
+ background:none;
+}
+ #form1 {
+ width:100%;
+}
+ #form1 table tr {
+ width:0% !important;
+}
+ #form1 input[type="text"], textarea {
+ width:100%;
+}
+ #form1 tr td img {
+ width:100%;
+ text-align:center;
+}
+ #customspecer {
+ height:75px !important;
+}
+#servicespace {
+ height:200px !important;
+}
+}
+@media only screen and (min-width: 641px) and (max-width: 800px) {
+	.desktopmenu  {
+		display:none;
+	}
+	#aboutleftimage, #servicesleftimage, #connectleftimage, #homeleftimage {
+		width:40%;
+	}
+	#rightcolumn {
+		width:60%;
+	}
+	#servicesidenav {
+		right:63%;
+	}
+}
+
+@media only screen and (min-width: 801px) and (max-width: 950px) {
+	#aboutleftimage, #servicesleftimage, #connectleftimage, #homeleftimage {
+		width:40%;
+	}
+	#rightcolumn {
+		width:60%;
+	}
+	.desktopmenu  {
+		display:none;
+	}
+}
